@@ -46,7 +46,18 @@ export default {
     baseURL: '/'
   },
 
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  services: {
+    auth: {
+      persistence: 'local', // default
+      initialize: {
+        // onAuthStateChangedAction: 'onAuthStateChangeAction',
+        subscribeManually: false,
+      }
+    }
   }
 }
