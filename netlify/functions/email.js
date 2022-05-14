@@ -24,12 +24,12 @@ exports.handler = async function (event, context) {
         };
 
         const mailer = nodemailer.createTransport({
-            host: 'in-v3.mailjet.com',
-            port: 465,
+            host: "smtp-relay.sendinblue.com",
+            port: 587,
             secure: true,
             auth: {
-                user: process.env.MailJetAPIKey,
-                pass: process.env.MailJetAPISecretKey
+                user: "apikey",
+                pass: process.env.apiKey
             }
         });
 
