@@ -28,7 +28,7 @@ exports.handler = async function (event, context) {
             port: 587,
             secure: true,
             auth: {
-                user:'apiKey',
+                user:'apikey',
                 pass: process.env.apiKey
             }
         });
