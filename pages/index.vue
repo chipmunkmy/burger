@@ -224,7 +224,7 @@
         <button><img src="/googleplay.png" class="h-[50px]" alt="" /></button>
       </div>
       <div class="col-span-2">
-        <img src="/eshoip.png" class="-mt-10 h-[500px] object-cover" alt="" />
+        <img src="/eshop.png" class="-mt-10 h-[500px] object-cover" alt="" />
       </div>
     </div>
   </div>
