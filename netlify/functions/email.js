@@ -29,7 +29,7 @@ exports.handler = async function (event, context) {
             secure: true,
             auth: {
                 user: "apiKey",
-                pass: process.env.apiKey
+                pass: process.env.apiKey,
             }
         });
 
