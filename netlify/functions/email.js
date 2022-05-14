@@ -25,7 +25,7 @@ exports.handler = async function (event, context) {
 
         const mailer = nodemailer.createTransport({
             host: "smtp-relay.sendinblue.com",
-            port: 587,
+            port: 465,
             secure: true,
             auth: {
                 user: "apiKey",
