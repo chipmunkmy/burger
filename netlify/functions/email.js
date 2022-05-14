@@ -24,11 +24,11 @@ exports.handler = async function (event, context) {
         };
 
         const mailer = nodemailer.createTransport({
-            host: "smtp-relay.sendinblue.com",
+            host: 'smtp-relay.sendinblue.com',
             port: 465,
             secure: true,
             auth: {
-                user: "apiKey",
+                user: 'apiKey',
                 pass: process.env.apiKey,
             },
         });
