@@ -29,7 +29,7 @@ exports.handler = async function (event, context) {
             secure: true,
             auth: {
                 user: process.env.MailJetAPIKey,
-                pass: process.env.MailJetAPISecretKey,
+                pass: process.env.MailJetAPISecretKey
             },
         });
 
