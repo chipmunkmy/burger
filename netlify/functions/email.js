@@ -28,7 +28,7 @@ exports.handler = async function (event, context) {
             port: 587,
             auth: {
               user: "norhafizah.my@gmail.com",
-              pass: "SMTP-KEY",
+              pass: "V4TOq6YJvXZDacrB",
             },
           });
 
