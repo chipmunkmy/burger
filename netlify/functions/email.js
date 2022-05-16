@@ -26,6 +26,7 @@ exports.handler = async function (event, context) {
         const mailer = nodemailer.createTransport({
             host: 'in.mailjet.com',
             port: 465,
+            secure: true,
             auth: {
                 user: process.env.MAILJET_API_KEY,
                 pass: process.env.MAILJET_API_SECRET
