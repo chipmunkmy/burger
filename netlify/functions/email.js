@@ -23,13 +23,14 @@ exports.handler = async function (event, context) {
             text: emailContent,
         };
 
-        const transporter = nodemailer.createTransport({
-            service: 'SendinBlue', // no need to set host or port etc.
+        const mailer = nodemailer.createTransport({
+            host: 'in.mailjet.com',
+            port: 2525,
             auth: {
-              user: "norhafizah.my@gmail.com",
-              pass: "V4TOq6YJvXZDacrB",
-            },
-          });
+                user: process.env.MAILJET_API_KEY,
+                pass: process.env.MAILJET_API_SECRET
+            }
+        });
 
         try {
             await mailer.sendMail(email);
