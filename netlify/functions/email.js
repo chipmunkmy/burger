@@ -24,8 +24,7 @@ exports.handler = async function (event, context) {
         };
 
         const transporter = nodemailer.createTransport({
-            host: "smtp-relay.sendinblue.com",
-            port: 587,
+            service: 'SendinBlue', // no need to set host or port etc.
             auth: {
               user: "norhafizah.my@gmail.com",
               pass: "V4TOq6YJvXZDacrB",
