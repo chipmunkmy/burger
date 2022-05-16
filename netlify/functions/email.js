@@ -44,4 +44,4 @@ exports.handler = async function (event, context) {
         } catch (error) {
             console.log("Error sending email", error);
         }
-    };    
+    };
