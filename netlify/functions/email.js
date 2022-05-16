@@ -17,7 +17,7 @@ exports.handler = async function (event, context) {
         emailContent = emailContent + '\n Total Amount: ${total.toFixed(2)}';
 
         const email = {
-            from: "norhafizah.my@gmail.com",
+            from: "norhafizah@ppas.gov.my",
             to: customerEmail,
             subject: "New Order Received",
             text: emailContent,
