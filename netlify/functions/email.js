@@ -1,4 +1,9 @@
 const nodemailer = require("nodemailer");
+const sibTransport = require('nodemailer-sendinblue-transport');
+
+transport = nodemailer.createTransport(sibTransport({
+    apiKey: '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',
+  }));
 
 exports.handler = async function (event, context) {
     const body = JSON.parse(event.body);
@@ -22,15 +27,6 @@ exports.handler = async function (event, context) {
             subject: "New Order Received",
             text: emailContent,
         };
-
-        const transporter = nodemailer.createTransport({
-            host: "smtp-relay.sendinblue.com",
-            port: 587,
-            auth: {
-              user: "norhafizah.my@gmail.com",
-              pass: "V4TOq6YJvXZDacrB",
-            },
-          });
 
         try {
             await mailer.sendMail(email);
