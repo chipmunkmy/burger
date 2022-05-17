@@ -1,4 +1,5 @@
-const nodemailer = require("nodemailer");
+
+const mailjet = require('node-mailjet').connect(process.env.MAILJET_PUBLIC_KEY, process.env.MAILJET_PRIVATE_KEY);
 
 exports.handler = async function (event, context) {
     const body = JSON.parse(event.body);
@@ -23,13 +24,13 @@ exports.handler = async function (event, context) {
             text: emailContent,
         };
 
-        const mailer = nodemailer.createTransport({
+        const mailer = mailjet.createTransport({
             host: 'in-V3.mailjet.com',
             port: 465,
             secure: true,
             auth: {
-                user: process.env.MAILJETAPIKEY,
-                pass: process.env.MAILJETAPISECRET
+                user: process.env.MAILJET_PUBLIC_KEY,
+                pass: process.env.MAILJET_PRIVATE_KEY
             }
         });
 
