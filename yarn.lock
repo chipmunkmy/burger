@@ -2104,6 +2104,11 @@
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-7.4.1.tgz"
   "version" "7.4.1"
 
+"addressparser@^1.0.1":
+  "integrity" "sha512-aQX7AISOMM7HFE0iZ3+YnD07oIeJqWGVnJ+ZIKaBZAk03ftmVYVqsGas/rbXKR21n4D/hKCSHypvcyOkds/xzg=="
+  "resolved" "https://registry.npmjs.org/addressparser/-/addressparser-1.0.1.tgz"
+  "version" "1.0.1"
+
 "agent-base@^6.0.0", "agent-base@^6.0.2", "agent-base@6":
   "integrity" "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ=="
   "resolved" "https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz"
@@ -2327,6 +2332,11 @@
   dependencies:
     "lodash" "^4.17.14"
 
+"async@^3.2.0":
+  "integrity" "sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g=="
+  "resolved" "https://registry.npmjs.org/async/-/async-3.2.3.tgz"
+  "version" "3.2.3"
+
 "asynckit@^0.4.0":
   "integrity" "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q=="
   "resolved" "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
@@ -2466,7 +2476,7 @@
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
   "version" "2.2.0"
 
-"bluebird@^3.1.1", "bluebird@^3.5.5":
+"bluebird@^3.1.1", "bluebird@^3.5.5", "bluebird@^3.7.2":
   "integrity" "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="
   "resolved" "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
   "version" "3.7.2"
@@ -3945,6 +3955,11 @@
   dependencies:
     "is-obj" "^2.0.0"
 
+"dotenv@^10.0.0":
+  "integrity" "sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-10.0.0.tgz"
+  "version" "10.0.0"
+
 "dotenv@^16.0.0":
   "integrity" "sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ=="
   "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.1.tgz"
@@ -4007,6 +4022,11 @@
   "integrity" "sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k="
   "resolved" "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz"
   "version" "1.0.2"
+
+"encoding-japanese@2.0.0":
+  "integrity" "sha512-++P0RhebUC8MJAwJOsT93dT+5oc5oPImp1HubZpAuCZ5kTLnhuuBhKHj2jJeO/Gj93idPBWmIuQ9QWMe5rX3pQ=="
+  "resolved" "https://registry.npmjs.org/encoding-japanese/-/encoding-japanese-2.0.0.tgz"
+  "version" "2.0.0"
 
 "end-of-stream@^1.0.0", "end-of-stream@^1.1.0":
   "integrity" "sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q=="
@@ -5355,6 +5375,13 @@
   dependencies:
     "safer-buffer" ">= 2.1.2 < 3"
 
+"iconv-lite@0.6.3":
+  "integrity" "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw=="
+  "resolved" "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz"
+  "version" "0.6.3"
+  dependencies:
+    "safer-buffer" ">= 2.1.2 < 3.0.0"
+
 "icss-utils@^4.0.0", "icss-utils@^4.1.1":
   "integrity" "sha512-4aFq7wvWyMHKgxsH8QQtGpvbASCf+eM3wPRLI6R+MgAnTCZ6STYsRvttLvRWK0Nfif5piF394St3HeJDaljGPA=="
   "resolved" "https://registry.npmjs.org/icss-utils/-/icss-utils-4.1.1.tgz"
@@ -6101,6 +6128,26 @@
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
 
+"libbase64@^1.2.1", "libbase64@1.2.1":
+  "integrity" "sha512-l+nePcPbIG1fNlqMzrh68MLkX/gTxk/+vdvAb388Ssi7UuUN31MI44w4Yf33mM3Cm4xDfw48mdf3rkdHszLNew=="
+  "resolved" "https://registry.npmjs.org/libbase64/-/libbase64-1.2.1.tgz"
+  "version" "1.2.1"
+
+"libmime@^5.0.0":
+  "integrity" "sha512-xOqorG21Va+3CjpFOfFTU7SWohHH2uIX9ZY4Byz6J+lvpfvc486tOAT/G9GfbrKtJ9O7NCX9o0aC2lxqbnZ9EA=="
+  "resolved" "https://registry.npmjs.org/libmime/-/libmime-5.1.0.tgz"
+  "version" "5.1.0"
+  dependencies:
+    "encoding-japanese" "2.0.0"
+    "iconv-lite" "0.6.3"
+    "libbase64" "1.2.1"
+    "libqp" "1.1.0"
+
+"libqp@1.1.0":
+  "integrity" "sha1-9ebgatdLeU+1tbZpiL9yjvHe2+g="
+  "resolved" "https://registry.npmjs.org/libqp/-/libqp-1.1.0.tgz"
+  "version" "1.1.0"
+
 "lilconfig@^2.0.5":
   "integrity" "sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg=="
   "resolved" "https://registry.npmjs.org/lilconfig/-/lilconfig-2.0.5.tgz"
@@ -6766,7 +6813,7 @@
     "util" "^0.11.0"
     "vm-browserify" "^1.0.1"
 
-"node-mailjet@^3.4.1":
+"node-mailjet@^3.3.4", "node-mailjet@^3.4.1":
   "integrity" "sha512-m+msgBJYgwFbIZBIPOnsGOtBt9xP03UqmkmuEcgTcLlr/U1GUJQrVI7cDFRgujybb9Cl1wl4thIGyM3wt6X+zQ=="
   "resolved" "https://registry.npmjs.org/node-mailjet/-/node-mailjet-3.4.1.tgz"
   "version" "3.4.1"
@@ -6797,7 +6844,33 @@
     "on-finished" "^2.3.0"
     "vary" "^1.1.2"
 
-"nodemailer@^6.7.5":
+"nodemailer-build-attachment@^3.0.0":
+  "integrity" "sha512-8hoic5t/tpNMfrRoHW7rwpEpjrp1ZMSYloBZHhCZHnin+Htxr+egR4ufrFeHC0ueSFjmsvMDr5veaQ4KpYvTNA=="
+  "resolved" "https://registry.npmjs.org/nodemailer-build-attachment/-/nodemailer-build-attachment-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "libbase64" "^1.2.1"
+    "libmime" "^5.0.0"
+    "nodemailer-fetch" "^2.1.0"
+
+"nodemailer-fetch@^2.1.0":
+  "integrity" "sha1-QfYx0Wsx2lXigkloizKRZ93Q1lE="
+  "resolved" "https://registry.npmjs.org/nodemailer-fetch/-/nodemailer-fetch-2.1.0.tgz"
+  "version" "2.1.0"
+
+"nodemailer-mailjet-transport@^1.0.4":
+  "integrity" "sha512-0fw7y75390IGjjIAePQq9d6uARLQceV4OiR7Z5QO0gOCXWlzjgJdvzl8k++Na+7aS7QPNr5fZkpvtF+IuNppow=="
+  "resolved" "https://registry.npmjs.org/nodemailer-mailjet-transport/-/nodemailer-mailjet-transport-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "addressparser" "^1.0.1"
+    "async" "^3.2.0"
+    "bluebird" "^3.7.2"
+    "dotenv" "^10.0.0"
+    "node-mailjet" "^3.3.4"
+    "nodemailer-build-attachment" "^3.0.0"
+
+"nodemailer@^6.7.5", "nodemailer@>=4.x":
   "integrity" "sha512-6VtMpwhsrixq1HDYSBBHvW0GwiWawE75dS3oal48VqRhUvKJNnKnJo2RI/bCVQubj1vgrgscMNW4DHaD6xtMCg=="
   "resolved" "https://registry.npmjs.org/nodemailer/-/nodemailer-6.7.5.tgz"
   "version" "6.7.5"
@@ -8818,7 +8891,7 @@
   dependencies:
     "regexp-tree" "~0.1.1"
 
-"safer-buffer@^2.1.0", "safer-buffer@>= 2.1.2 < 3":
+"safer-buffer@^2.1.0", "safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
   "integrity" "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
   "resolved" "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
