@@ -24,7 +24,7 @@ exports.handler = async function (event, context) {
         };
 
         const mailer = nodemailer.createTransport({
-            host: 'in-vs.mailjet.com',
+            host: 'in-v3.mailjet.com',
             port: 465,
             secure: true,
             auth: {
