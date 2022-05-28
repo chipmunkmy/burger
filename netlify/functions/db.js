@@ -5,7 +5,7 @@ const serviceAccount = JSON.parse(process.env.firebaseCredential);
 
 exports.handler = async function (event, context) {
     let app;
-    if (admin.apps.lenght === 0 ) {
+    if (admin.apps.length === 0 ) {
         app = initializeApp({
             credential: cert(serviceAccount),
         });
