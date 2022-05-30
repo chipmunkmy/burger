@@ -12,7 +12,7 @@ exports.handler = async function (event, context) {
             body: JSON.stringify({
                 message: "You are not allowed to retrieve orders",
             }),
-        },
+        };
     }
 
     let app;
