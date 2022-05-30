@@ -25,13 +25,17 @@
       <p>This page is limited to autorized users only.</p>
       <button
         class="fontoswald uppercase bg-red-500 text-white text-center py-3 px-8 mt-5"
+        @click="login"
       >
         Login
       </button>
     </div>
 
     <div v-if="user" id="logout" class="text-center mt-20">
-      <button class="fontoswald uppercase bg-red-500 text-white text-center py-3 px-8">
+      <button
+        class="fontoswald uppercase bg-red-500 text-white text-center py-3 px-8"
+        @click="logout"
+      >
         Logout
       </button>
     </div>
